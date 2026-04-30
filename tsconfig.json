@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
+    "module": "esnext",
+    "lib": ["es2021", "DOM", "DOM.Iterable"],
+    "target": "es2021",
+    "moduleResolution": "bundler",
+    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
     "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "bundler",
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"]
+    "skipLibCheck": true
   },
   "include": ["src/**/*.js", "vite-env.d.ts"]
 }
