@@ -1,11 +1,7 @@
-import { LitElement, css, html } from "lit";
-import stylesheet from "./styles";
+import { html } from "lit";
+import { StyledElement } from "../styles.js";
 
-export class MyElement extends LitElement {
-  static get styles() {
-    return [stylesheet];
-  }
-
+export class MyElement extends StyledElement {
   static get properties() {
     return {
       count: { type: Number },
@@ -21,7 +17,7 @@ export class MyElement extends LitElement {
     return html`
       <div class="flex flex-col gap-2 justify-center items-center">
         <slot></slot>
-        <button class="btn" @click=${this._onClick}>
+        <button class="btn btn-accent" @click=${this._onClick}>
           Count is ${this.count}
         </button>
       </div>
